@@ -1,0 +1,37 @@
+# 📘 Web & Mobile Development — 1 Year Course
+**📅 Schedule:** Saturday & Sunday  
+**⏰ Time:** 12:00 PM – 2:00 PM  
+**📍 Duration:** 1 Year  
+
+This repository contains weekly class outlines, notes, and code examples for the Web & Mobile Development course.  
+The program begins with **HTML**, then moves into CSS, JavaScript, frontend frameworks, backend development, databases, and mobile app development.
+
+---
+
+## 📅 Weekly Class Progress
+
+### 📆 Class 01 — Saturday, 15 November 2025
+**Topics Covered:**
+- Installing **Visual Studio Code**
+- Understanding the **VS Code interface**
+- Installing **Live Server** extension
+- Creating a **project folder structure**
+- Writing and running the first **HTML file**
+
+---
+
+### 📆 Class 02 — Sunday, 16 November 2025
+**Topics Covered:**
+- Paragraph tag (`<p>`)
+- Heading tags (`<h1>` – `<h6>`)
+- Ordered & unordered lists (`<ol>`, `<ul>`)
+- Anchor tag (`<a>`)
+- Relative vs Absolute URLs
+- Understanding the **CSS Box Model**:
+  - Margin
+  - Border
+  - Padding
+- Image tag (`<img>`)
+---
+
+## 📂 Recommended Repository Structure
