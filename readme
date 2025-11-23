@@ -13,6 +13,8 @@ The program begins with **HTML**, then moves into **CSS**, **JavaScript**, front
 
 | Day | Date | Class Focus | Topics Covered |
 |-----|------|-------------|----------------|
-| Day 0 | Sunday, 08/01/2025 | Orientation | Introduction to Web & Mobile Development |
-| Day 1 | Saturday, 15/01/2025 | VS Code | Installing VS Code, Exploring VS Code Interface, Live Server Setup |
-| Day 2 | Sunday, 16/01/2025 | HTML | Paragraph (`<p>`), Headings (`<h1>`–`<h6>`), Ordered List (`<ol>`), Unordered List (`<ul>`), Image (`<img>`), Anchor (`<a>`) |
+| Day 0 | Sunday, 08/11/2025 | Orientation | Introduction to Web & Mobile Development |
+| Day 1 | Saturday, 15/11/2025 | VS Code | Installing VS Code, Exploring VS Code Interface, Live Server Setup |
+| Day 2 | Sunday, 16/11/2025 | HTML | Paragraph (`<p>`), Headings (`<h1>`–`<h6>`), Ordered List (`<ol>`), Unordered List (`<ul>`), Image (`<img>`), Anchor (`<a>`) |
+| Day 3 | Saturday, 22/11/2025 | HTML | Table, Form, Anchor Tag
+| Day 4 | Sunday,   23/11/2025 | HTML | Block & Inline Element (Div tag) Style Attribute
