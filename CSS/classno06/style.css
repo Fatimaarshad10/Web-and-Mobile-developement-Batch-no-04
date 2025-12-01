@@ -1,0 +1,46 @@
+#hero-main {
+    background-color: black;
+    color: white;
+    padding-inline: 30px;
+    padding-block: 40px;
+    text-align: center;
+
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+#hero-btn1 {
+    background-color: #947afc;
+    color: white;
+}
+
+#hero-heading {
+    font-size: 80px;
+    font-family: sans-serif;
+
+}
+
+#hero-sub {
+    background-color: #947afc;
+    border-radius: 50px;
+    width: 400px;
+    margin-left: 450px;
+    font-family: sans-serif;
+
+}
+
+#sub-para {
+    display: inline-block;
+}
+
+#hero-para {
+    width: 600px;
+    margin-left: 350px;
+}
