@@ -10,20 +10,20 @@ The program begins with **HTML**, then moves into **CSS**, **JavaScript**, front
 ---
 
 ### 🗓️ Web & Mobile Development — Weekly Progress
-| Day    | Date                 | Class Focus  | Topics Covered                                                                                                           |
-| ------ | -------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| Day 00 | Sunday, 08/11/2025   | Orientation  | Introduction to Web & Mobile Development                                                                                 |
-| Day 01 | Saturday, 15/11/2025 | VS Code      | Installing VS Code, Exploring VS Code Interface, Live Server Setup                                                       |
-| Day 02 | Sunday, 16/11/2025   | HTML Basics  | Paragraph (`<p>`), Headings (`<h1>`–`<h6>`), Ordered & Unordered Lists (`<ol>`, `<ul>`), Image (`<img>`), Anchor (`<a>`) |
-| Day 03 | Saturday, 22/11/2025 | HTML         | Tables, Forms, Anchor Tag                                                                                                |
-| Day 04 | Sunday, 23/11/2025   | HTML         | Block & Inline Elements, `<div>` Tag, Style Attribute                                                                    |
-| Day 05 | Saturday, 29/11/2025 | HTML         | Semantic & Non-Semantic Elements (`div`, `span`, `font`), Text Properties                                                |
-| Day 06 | Sunday, 30/11/2025   | CSS Basics   | Internal Styling, Display Properties (Block & Inline), Hero Section (gladia.io)                                          |
-| Day 07 | Saturday, 06/12/2025 | CSS          | Flexbox, Navbar Design (gladia.io)                                                                                       |
-| Day 08 | Sunday, 07/12/2025   | CSS & GitHub | GitHub Introduction, Three Cards Layout (gladia.io)                                                                      |
-| Day 09 | Saturday, 13/12/2025 | CSS          | Position: Relative & Absolute                                                                                            |
-| Day 10 | Sunday, 14/12/2025   | CSS Advanced | Overflow Property, Figma Pixel-Perfect Design to HTML & CSS                                                              |
-                                        |
+
+| Day | Date | Class Focus | Topics Covered |
+|-----|------|-------------|----------------|
+| Day 0 | Sunday, 08/11/2025 | Orientation | Introduction to Web & Mobile Development |
+| Day 1 | Saturday, 15/11/2025 | VS Code | Installing VS Code, Exploring VS Code Interface, Live Server Setup |
+| Day 2 | Sunday, 16/11/2025 | HTML | Paragraph (`<p>`), Headings (`<h1>`–`<h6>`), Ordered List (`<ol>`), Unordered List (`<ul>`), Image (`<img>`), Anchor (`<a>`) |
+| Day 3 | Saturday, 22/11/2025 | HTML | Table, Form, Anchor Tag
+| Day 4 | Sunday,   23/11/2025 | HTML | Block & Inline Element (Div tag) Style Attribute
+| Day 5 | Saturday, 29/11/2025 | HTML | Semantic & Non  Semantic (div ,span , font , text property)
+| Day 6 | Sunday,   30/11/2025 | CSS  | Internal styling Property (block , inline , gladia.io hero section)
+| Day 7 | Saturday, 06/12/2025 | CSS  | flex & Navbar (gladia.io)
+| Day 8 | Sunday,   07/12/2025 | CSS  | Github and Three cards (gladia.io)
+| Day 9 | Saturday, 13/12/2025 | CSS  | Position (Relative & Absolute)
+| Day 10| Sunday , 14/12/2025  | CSS  | Overflow & Figma pixel perfect to (HTML & CSS)
 
 
 
