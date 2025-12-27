@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 12</title>
+    <style>
+        .main {
+            background-image: url('./photo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+            padding: 30px;
+        }
+
+        .new {
+            background-color: aqua;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            opacity: 0.5;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            position: relative;
+        }
+
+        /* pseudo element : hover */
+        #new-options {
+            display: none;
+            background-color: whitesmoke;
+            box-shadow: 10px 10px 20px -18px rgba(0, 0, 0, 0.49);
+            width: 100px;
+            position: absolute;
+        }
+
+        .btn:hover +  #new-options {
+            display: block;
+
+        }
+        img:hover {
+            width: 300px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./photo.jpg" alt="">
+    <!-- 
+    <div class="main">
+        <div class="new">
+            <h1>Heading no 01</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos laudantium voluptates non
+                quam voluptatem error officiis blanditiis necessitatibus eos, doloribus, nisi accusantium cumque facilis
+                ducimus dolorem laboriosam. Numquam, aspernatur.</p>
+        </div>
+
+    </div> -->
+    <button class="btn">Click me</button>
+    
+    <div id="new-options">
+        <p>List no 01</p>
+        <p>List no 02</p>
+        <p>List no 03</p>
+    </div>
+
+</body>
+
+</html>
