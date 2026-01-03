@@ -1,41 +1,36 @@
-# 📘 Web & Mobile Development — Batch No 04 (1 Year Course)
+# 📘 Web & Mobile Development — Batch No. 04 (1 Year Course)
 
-**📅 Schedule:** Saturday & Sunday  
-**⏰ Time:** 12:00 PM – 2:00 PM  
-**📍 Duration:** 1 Year  
+## 📅 Schedule
+- **Days:** Saturday & Sunday  
+- **Time:** 12:00 PM – 2:00 PM  
+- **Duration:** 1 Year  
 
-This repository contains weekly class outlines, notes, and code examples for the Web & Mobile Development course.  
-The program begins with **HTML**, then moves into **CSS**, **JavaScript**, frontend frameworks, backend development, databases, and mobile app development.
+This repository contains **weekly class outlines, notes, and code examples** for the Web & Mobile Development course.
+
+The program starts with **HTML**, moves into **CSS**, then progresses to **JavaScript**, frontend frameworks, backend development, databases, and **mobile app development**.
 
 ---
 
-### 🗓️ Web & Mobile Development — Weekly Progress
+## 🗓️ Weekly Progress
 
 | Day | Date | Class Focus | Topics Covered |
 |-----|------|-------------|----------------|
 | Day 0 | Sunday, 08/11/2025 | Orientation | Introduction to Web & Mobile Development |
 | Day 1 | Saturday, 15/11/2025 | VS Code | Installing VS Code, Exploring VS Code Interface, Live Server Setup |
 | Day 2 | Sunday, 16/11/2025 | HTML | Paragraph (`<p>`), Headings (`<h1>`–`<h6>`), Ordered List (`<ol>`), Unordered List (`<ul>`), Image (`<img>`), Anchor (`<a>`) |
-| Day 3 | Saturday, 22/11/2025 | HTML | Table, Form, Anchor Tag
-| Day 4 | Sunday,   23/11/2025 | HTML | Block & Inline Element (Div tag) Style Attribute
-| Day 5 | Saturday, 29/11/2025 | HTML | Semantic & Non  Semantic (div ,span , font , text property)
-| Day 6 | Sunday,   30/11/2025 | CSS  | Internal styling Property (block , inline , gladia.io hero section)
-| Day 7 | Saturday, 06/12/2025 | CSS  | flex & Navbar (gladia.io)
-| Day 8 | Sunday,   07/12/2025 | CSS  | Github and Three cards (gladia.io)
-| Day 9 | Saturday, 13/12/2025 | CSS  | Position (Relative & Absolute)
-| Day 10| Sunday , 14/12/2025  | CSS  | Overflow & Figma pixel perfect to (HTML & CSS)
-| Day 11| Saturday ,20/12/2025  | CSS  | max , min width , combinator , float
-| Day 12| Sunday , 21/12/2025  | Off day
-| Day 12| Saturday , 27/12/2025  | Background image , opacity , hover
-| Day 12| Sunday ,  28/12/2025  | HTML TEST
-| Day 12| Sunday ,  03/01/2026  | Pesudo element , attributes , Grid , Form
+| Day 3 | Saturday, 22/11/2025 | HTML | Tables, Forms, Anchor Tag |
+| Day 4 | Sunday, 23/11/2025 | HTML | Block & Inline Elements, `div` Tag, Style Attribute |
+| Day 5 | Saturday, 29/11/2025 | HTML | Semantic & Non-Semantic Elements (`div`, `span`, `font`), Text Properties |
+| Day 6 | Sunday, 30/11/2025 | CSS | Internal Styling, Display Properties (Block & Inline), Gladia.io Hero Section |
+| Day 7 | Saturday, 06/12/2025 | CSS | Flexbox & Navbar (Gladia.io) |
+| Day 8 | Sunday, 07/12/2025 | CSS | GitHub Introduction, Three Cards Layout (Gladia.io) |
+| Day 9 | Saturday, 13/12/2025 | CSS | Positioning (Relative & Absolute) |
+| Day 10 | Sunday, 14/12/2025 | CSS | Overflow, Figma Pixel-Perfect Design to HTML & CSS |
+| Day 11 | Saturday, 20/12/2025 | CSS | Max & Min Width, Combinators, Float |
+| Day 12 | Sunday, 21/12/2025 | — | Off Day |
+| Day 13 | Saturday, 27/12/2025 | CSS | Background Image, Opacity, Hover Effects |
+| Day 14 | Sunday, 28/12/2025 | Assessment | HTML Test |
+| Day 15 | Saturday, 03/01/2026 | CSS | Pseudo-elements, Attributes, CSS Grid, Forms |
 
-
-
-
-
-
-
-
-
+---
 
