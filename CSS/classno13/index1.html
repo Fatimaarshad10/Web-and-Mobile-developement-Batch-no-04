@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 13</title>
+    <style>
+        ::selection {
+            background-color: greenyellow;
+            color: saddlebrown;
+        }
+        a{
+            color: green;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:hover{
+            background-color: red;
+        }
+        a:active{
+            background-color: blue;
+        }
+        input {
+            padding: 20px;
+        }
+        input:focus {
+            border:  2px solid rgb(0, 0, 0);
+            outline: none;
+            border-radius: 20px;
+        }
+        p::first-line {
+            color: blue;
+            font-size: 30px;
+        }
+        p::first-letter{
+            font-size: 40px;
+            background-color: aquamarine;
+        }
+        h2::before {
+            content: "Welcome to ";
+            background-color: red;
+            ;
+        }
+        h2::after {
+            content: " !!!";
+            background-color: yellow;
+        }
+        input[type="email"]::placeholder {
+            color: red;
+            font-size: 20px;
+        }
+        input[type="password"]::placeholder {
+            color: blue;
+            font-size: 20px;
+        }
+        input[type="text"]::placeholder {
+            color: green;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="./index.html">Home Page</a>
+    <input type="text" placeholder=" For Simple text">
+    <input type="email" placeholder="For email" >
+    <input type="password" placeholder="For Password">
+    <h2>Hello</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum maiores, incidunt, vero in tempora non corrupti, eos omnis provident quod soluta laborum excepturi dolor praesentium voluptas magnam aperiam est.</p>
+</body>
+</html>
