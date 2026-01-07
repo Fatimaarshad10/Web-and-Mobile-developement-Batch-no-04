@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animated UI Example</title>
   <style>
-   .hero {
-  text-align: center;
-  margin-top: 50px;
-}
+    .hero {
+      text-align: center;
+      margin-top: 50px;
+    }
 
-.hero h1 {
-  font-size: 48px;
-  opacity: 0;
-  animation: fadeSlide 1s ease forwards;
-}
+    .hero h1 {
+      font-size: 48px;
+      opacity: 0;
+      animation: fadeSlide 1s ease forwards;
+    }
 
-.hero p {
-  opacity: 0;
-  animation: fadeSlide 1s ease forwards;
-  animation-delay: 0.5s;
-}
+    .hero p {
+      opacity: 0;
+      animation: fadeSlide 1s ease forwards;
+      animation-delay: 0.5s;
+    }
 
-.hero .cta {
-  margin-top: 20px;
-  padding: 12px 30px;
-  font-size: 18px;
-  cursor: pointer;
-  background: #3498db;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  opacity: 0;
-  animation: fadeSlide 1s ease forwards;
-  animation-delay: 1s;
-}
+    .hero .cta {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      opacity: 0;
+      animation: fadeSlide 1s ease forwards;
+      animation-delay: 1s;
+    }
 
-@keyframes fadeSlide {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.notification {
-  background: #e74c3c;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 20px;
-  font-weight: bold;
-  animation: bounce 1s infinite alternate;
-}
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
 
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-.loader-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 50px;
-}
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-.loader {
-  width: 50px;
-  height: 50px;
-  border: 6px solid #f3f3f3;
-  border-top: 6px solid #3498db;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
+    .notification {
+      background: #e74c3c;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      animation: bounce 1s infinite alternate;
+    }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .loader-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 50px;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<div class="hero">
-  <h1>Welcome to My Site</h1>
-  <p>Engage your users with smooth animations</p>
-  <button class="cta">Get Started</button>
-</div>
-<div class="notification">3 New Messages</div>
-<div class="loader-container">
-  <div class="loader"></div>
-  <p>Loading, please wait...</p>
-</div>
+  <div class="hero">
+    <h1>Welcome to My Site</h1>
+    <p>Engage your users with smooth animations</p>
+    <button class="cta">Get Started</button>
+  </div>
+  <div class="notification">3 New Messages</div>
+  <div class="loader-container">
+    <div class="loader"></div>
+    <p>Loading, please wait...</p>
+  </div>
 
 </body>
+
 </html>

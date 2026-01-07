@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: repeat(3, 200px);
+            /* justify-items: center; */
+            background-color: yellow;
+            /* justify-content: center; */
+            place-items: center;
+            row-gap: 30px;
+            font-family: "Atkinson Hyperlegible Mono", sans-serif;
+
+        }
+
+        .container>div {
+            border: 3px dashed rgb(0, 0, 0);
+        }
+
+
+        .box {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.9s ease , font-size 0.9s ease;
+        }
+
+        .box:hover {
+            background-color: green;
+            font-size: 30px;
+            transform:  skew(90deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>Box no 01 </h1>
+        </div>
+        <div class="box">
+            <h1>Box no 02 </h1>
+        </div>
+        <div class="box">
+            <h1>Box no 03 </h1>
+        </div>
+
+    </div>
+</body>
+
+</html>
