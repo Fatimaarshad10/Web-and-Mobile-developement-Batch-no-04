@@ -27,7 +27,9 @@
 | Day 13 | Saturday, 27/12/2025 | CSS | Background Image, Opacity, Hover Effects |
 | Day 14 | Sunday, 28/12/2025 | Test | HTML Test |
 | Day 15 | Saturday, 03/01/2026 | CSS | Pseudo-elements, Attribute Selectors, CSS Grid, Forms |
-| Day 16 | Saturday, 04/01/2026 | CSS | Transition , Transform , font Family |
+| Day 16 | Sunday,   04/01/2026 | CSS | Transition , Transform , font Family |
+| Day 17 | Saturday, 10/01/2026 | CSS | Animation & Practice hover effect Pinterest |
+
 
 
 ---
