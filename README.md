@@ -29,6 +29,8 @@
 | Day 15 | Saturday, 03/01/2026 | CSS | Pseudo-elements, Attribute Selectors, CSS Grid, Forms |
 | Day 16 | Sunday,   04/01/2026 | CSS | Transition , Transform , font Family |
 | Day 17 | Saturday, 10/01/2026 | CSS | Animation & Practice hover effect Pinterest |
+| Day 18 | Sunday,  11/01/2026 | CSS | Responsive and Design understanding |
+
 
 
 
