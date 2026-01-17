@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Responsive</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 16px;
+            flex-direction: column;
+        }
+
+        .box-1,
+        .box-2,
+        .box-3 {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .img-test {
+            width: 100%;
+        }
+
+        @media (min-width: 900px) {
+            .container {
+               flex-direction: row;
+            }
+            .img-test{
+                width: 300px;
+            }
+        }
+        /* @media (max-width: 900px) {
+            .container {
+                background-color: rgb(223, 142, 142);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column-reverse;
+                padding-block: 24px;
+                padding-inline: 16px;
+                background-color: rgb(142, 223, 173);
+
+            }
+
+            .box-1 {
+                background-color: red;
+            }
+
+            .box-2 {
+                background-color: purple;
+            }
+
+            .box-3 {
+                background-color: yellow;
+            }
+
+            .img-test {
+                width: 100%;
+                display: none;
+            }
+
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="./image.jpg" alt="" class="img-test">
+        <div class="box-1">
+            <h1>Box no 01</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam commodi voluptatem voluptatum, dolore
+                beatae reiciendis dolores rerum fugiat consectetur provident hic tempora harum ad suscipit modi quia
+                amet! Consequatur, libero?</p>
+
+        </div>
+        <div class="box-2">
+            <h1>Box no 02</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius nulla, facilis soluta aliquid
+                optio, minus nobis aspernatur, impedit repudiandae ullam consequuntur commodi provident quis veritatis
+                voluptate quo ducimus voluptatibus.</p>
+        </div>
+        <div class="box-3">
+            <h1>Box no 03</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius nulla, facilis soluta aliquid
+                optio, minus nobis aspernatur, impedit repudiandae ullam consequuntur commodi provident quis veritatis
+                voluptate quo ducimus voluptatibus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

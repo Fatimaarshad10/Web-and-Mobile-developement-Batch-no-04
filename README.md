@@ -30,6 +30,8 @@
 | Day 16 | Sunday,   04/01/2026 | CSS | Transition , Transform , font Family |
 | Day 17 | Saturday, 10/01/2026 | CSS | Animation & Practice hover effect Pinterest |
 | Day 18 | Sunday,  11/01/2026 | CSS | Responsive and Design understanding |
+| Day 19 | Saturday,  17/01/2026 | CSS | Landing Page travel website (Practice)|
+
 
 
 
