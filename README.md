@@ -32,6 +32,8 @@
 | Day 18 | Sunday,  11/01/2026 | CSS | Responsive and Design understanding |
 | Day 19 | Saturday,  17/01/2026 | CSS | Landing Page travel website (Practice)|
 | Day 20 | Sunday,    18/01/2026 | CSS | Landing Page travel website (Practice no 02)|
+| Day 21 | Saturday,  24/01/2026 | CSS | REM , EM , Clamp function 
+
 
 
 
