@@ -34,6 +34,8 @@
 | Day 20 | Sunday,    18/01/2026 | CSS | Landing Page travel website (Practice no 02)|
 | Day 21 | Saturday,  24/01/2026 | CSS | REM , EM , Clamp function 
 | Day 22 | Sunday,   25/01/2026 | Bootstrap | Components
+| Day 23 | Saturday,   31/01/2026 | Bootstrap | layout
+
 
 
 
