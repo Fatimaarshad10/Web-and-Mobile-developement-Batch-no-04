@@ -35,6 +35,8 @@
 | Day 21 | Saturday,  24/01/2026 | CSS | REM , EM , Clamp function 
 | Day 22 | Sunday,   25/01/2026 | Bootstrap | Components
 | Day 23 | Saturday,   31/01/2026 | Bootstrap | layout
+| Day 23 | Saturday,   01/02/2026 | Bootstrap | Grid , Variables , Overview Pet website
+
 
 
 
