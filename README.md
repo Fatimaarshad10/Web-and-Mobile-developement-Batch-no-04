@@ -35,7 +35,12 @@
 | Day 21 | Saturday,  24/01/2026 | CSS | REM , EM , Clamp function 
 | Day 22 | Sunday,   25/01/2026 | Bootstrap | Components
 | Day 23 | Saturday,   31/01/2026 | Bootstrap | layout
-| Day 23 | Saturday,   01/02/2026 | Bootstrap | Grid , Variables , Overview Pet website
+| Day 24 | Sunday,     01/02/2026 | Bootstrap | Grid , Variables , Overview Pet website
+| Day 25 | Saturday,   07/02/2026 | Github | Git , commands , fork , clone , Vercel live
+| Day 26 | Sunday,     08/02/2026 | Github | Freelancing class
+
+
+
 
 
 
