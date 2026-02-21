@@ -39,8 +39,8 @@
 | Day 25 | Saturday, 07/02/2026 | Github | Git , commands , fork , clone , Vercel live
 | Day 26 | Sunday,   08/02/2026 | Github | Freelancing class
 | Day 27 | Satuday,  14/02/2026 | Github | Branches , pull, merge request 
-| Day 28 | Sunday,   15/02/2026 | Github | Bootstrap landing page test 
-| Day 29 | Satuday,  21/02/2026 | Github | Bootstrap landing page test 
+| Day 28 | Sunday,   15/02/2026 | Test   | Bootstrap landing page test 
+| Day 29 | Satuday,  21/02/2026 | JavaScript | Introduction to Javascript
 
 
 

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap</title>
+    <style>
+      body {
+        font-size: 10px;
+      }
+      button {
+        font-size: 10px !important;
+      }
+
+      .btn-custom-1 {
+        background-color: black;
+        color: white;
+        font-size: 10px !important;
+      }
+      .btn-custom-1:hover {
+        background-color: #000;
+        color: white;
+      }
+    </style>
+  </head>
+
+<!-- 
+  padding  (p-0 , p-1 , p-2 , p-3 , p-4 , p-5  )
+  margin  (m-0 , m-1 , m-2 , m-3 , m-4 , m-5  )
+  gap (gap-0 , gap-1 , gap-2 , gap-3 , gap-4 , gap-5) -->
+
+  <!-- layout 
+   Screen (Desktop , Tablet , mobile) -->
+   <!-- xs , sm , md , lg , xl , xxl -->
+    <!-- Grid -> row , col  -->
+
+  <body>
+    <div class=" d-flex flex-column flex-lg-row gap-lg-5 gap-2 mx-lg-5 mx-2 mt-4 justify-content-center align-content-center">
+      <div class="card w-lg-50 w-100" >
+        <div class="card-body">
+          <h5 class="card-title">🍪 Cookie Notice</h5>
+          <p class="card-text">
+            We use cookies to ensure that we give you the best experience on our
+            website. <a href="#">Read cookies policies </a>
+          </p>
+          <button href="#" class="btn btn-custom">
+            Manage your preferences
+          </button>
+          <button href="#" class="btn btn-custom-1">Accept</button>
+        </div>
+      </div>
+      <div class="card w-lg-50 w-100">
+        <div class="card-body">
+          <h5 class="card-title">🍪 Cookie Notice</h5>
+          <p class="card-text">
+            We use cookies to ensure that we give you the best experience on our
+            website. <a href="#">Read cookies policies </a>
+          </p>
+          <button href="#" class="btn btn-custom">
+            Manage your preferences
+          </button>
+          <button href="#" class="btn btn-custom-1">Accept</button>
+        </div>
+      </div>
+      <div class="card w-lg-50 w-100" >
+        <div class="card-body">
+          <h5 class="card-title">🍪 Cookie Notice</h5>
+          <p class="card-text">
+            We use cookies to ensure that we give you the best experience on our
+            website. <a href="#">Read cookies policies </a>
+          </p>
+          <button href="#" class="btn btn-custom">
+            Manage your preferences
+          </button>
+          <button href="#" class="btn btn-custom-1">Accept</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
