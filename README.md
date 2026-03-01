@@ -43,6 +43,8 @@
 | Day 29 | Satuday,  21/02/2026 | JavaScript | Introduction to Javascript
 | Day 30 | Sunday,   22/02/2026 | JavaScript | Intro to String , Number , Console , Alert , Variables 
 | Day 31 | Satuday,  28/02/2026 | JavaScript | let , var , const , prompt and dom
+| Day 32 | Sunday,   01/03/2026 | JavaScript | Operators , Literal (Text + Variables)
+
 
 
 
