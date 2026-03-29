@@ -48,6 +48,9 @@
 | Day 34 | Sunday,   08/03/2026 | JavaScript | Conditional Statement , CLaude
 | Day 35 | Satuday,  14/03/2026 | JavaScript | loop(for , while , do)
 | Day 36 | Sunday,   15/03/2026 | JavaScript | function (parameter and argument) with loop & condition
+| Day 37 | Satuday,  28/03/2026 | JavaScript | arrow function , global scope
+| Day 38 | Sunday,   29/03/2026 | JavaScript | global scope , use strict , stitch , netlify
+
 
 
 
