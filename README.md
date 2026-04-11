@@ -51,7 +51,9 @@
 | Day 37 | Satuday,  28/03/2026 | JavaScript | arrow function , global scope
 | Day 38 | Sunday,   29/03/2026 | JavaScript | global scope , use strict , stitch , netlify
 | Day 39 | Satuday,  04/04/2026 | JavaScript | off 
-| Day 40 | Sunday,  05/04/2026 | JavaScript | Array, Methods(pop , push , shift , unshift , at , toString) JSON format
+| Day 40 | Sunday,   05/04/2026 | JavaScript | Array, Methods(pop , push , shift , unshift , at , toString) JSON format
+| Day 41 | Satuday,  11/04/2026 | JavaScript | Array method , DOM manipulation , problems 
+
 
 
 
