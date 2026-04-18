@@ -54,6 +54,8 @@
 | Day 40 | Sunday,   05/04/2026 | JavaScript | Array, Methods(pop , push , shift , unshift , at , toString) JSON format
 | Day 41 | Satuday,  11/04/2026 | JavaScript | Array method , DOM manipulation , problems 
 | Day 42 | Sunday,   12/04/2026 | JavaScript | Array method (slice , splice , tosplice , indexof , lastindexof , includes )
+| Day 43 | Satuday,  18/04/2026 | JavaScript | Array method (sort , reverse , find , findLast , Problems (2) )
+
 
 
 

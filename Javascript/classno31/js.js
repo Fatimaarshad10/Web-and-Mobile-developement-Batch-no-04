@@ -20,10 +20,10 @@
 // console.log(citrus)
 
 
-const country_name = ['Pak' , 'India' , 'China' , "Iran" , "USA" , 'Pak']
+// const country_name = ['Pak' , 'India' , 'China' , "Iran" , "USA" , 'Pak']
 
-const data = country_name.includes("hh")
-console.log(data)
+// const data = country_name.includes("hh")
+// console.log(data)
 
 // country_name.splice(1, 1 , 'hh' )
 
@@ -35,3 +35,7 @@ console.log(data)
 // slice , splice , tosplice , indexof , lastindexof , includes 
 // Openclaw , leetcode 
 // Task : gemini API video / doc read
+
+let array= [4,7,2,9,5]
+array.find(value=>{value>5})
+console.log(array.reverse())

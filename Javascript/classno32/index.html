@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    const numbers = [5, 4, 8, 130, 44];
+    // Find the first element greater than 10
+    const found = numbers.find((value) => value > 10);
+    console.log(found);
+
+    const fruits = [40, 100, 1, 5, 25, 10];
+    console.log(fruits.sort());
+    // console.log(fruits.toSorted().toReversed())
+    console.log(
+      fruits.sort(function (a, b) {
+        return b - a;
+      }),
+    );
+
+    function sum(a, b) {
+      return a - b;
+    }
+    sum(10, 4);
+
+    //  indexOf()
+    //  lastIndexOf()
+    //  includes()
+    //  find()
+    //  findIndex()
+    //  findLast()
+    //  findLastIndex()
+  </script>
+  <body></body>
+</html>
