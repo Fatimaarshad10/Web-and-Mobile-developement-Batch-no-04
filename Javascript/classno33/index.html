@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // const numbers = [45, 4, 9, 16, 25];
+    // // const number1 = [];
+
+    // const data = numbers.map(function (value , index , array) {
+    //      return value * 2;
+    //     // console.log(value)
+    //     // console.log(index)
+    //     // console.log(array)
+    //     // if(value % 2 === 0){
+    //     //     number1.push(value)
+    //     // }
+    //  })
+    //  console.log(numbers)
+    //  console.log(data)
+
+    const numbers = [9, [8, 9, 9], [9, 9, 9]];
+    const data = numbers.flatMap(function (value) {
+      return value;
+    });
+    console.log(data);
+    console.log(numbers);
+  </script>
+</html>
