@@ -55,8 +55,10 @@
 | Day 41 | Satuday,  11/04/2026 | JavaScript | Array method , DOM manipulation , problems 
 | Day 42 | Sunday,   12/04/2026 | JavaScript | Array method (slice , splice , tosplice , indexof , lastindexof , includes )
 | Day 43 | Satuday,  18/04/2026 | JavaScript | Array method (sort , reverse , find , findLast , Problems (2) )
-| Day 43 | Sunday,   18/04/2026 | JavaScript | Array method (forEach , map , flatmap , Examples(2) )
-| Day 43 | Satuday,  25/04/2026 | JavaScript | Array method (filter , reduce , spread , map ,  String Method )
+| Day 44 | Sunday,   18/04/2026 | JavaScript | Array method (forEach , map , flatmap , Examples(2) )
+| Day 45 | Satuday,  25/04/2026 | JavaScript | Array method (filter , reduce , spread , map ,  String Method )
+| Day 46 | Sunday,   26/04/2026 | CSS MCQS TEST | String method(reduce , lower , upper , slice)
+
 
 
 
