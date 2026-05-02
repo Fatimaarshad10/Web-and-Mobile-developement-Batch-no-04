@@ -58,6 +58,8 @@
 | Day 44 | Sunday,   18/04/2026 | JavaScript | Array method (forEach , map , flatmap , Examples(2) )
 | Day 45 | Satuday,  25/04/2026 | JavaScript | Array method (filter , reduce , spread , map ,  String Method )
 | Day 46 | Sunday,   26/04/2026 | CSS MCQS TEST | String method(reduce , lower , upper , slice)
+| Day 47 | Satuday,  02/05/2026 | JavaScript | String method , DOM (onclick , functional call , innerText , getelementbyId)
+
 
 
 
