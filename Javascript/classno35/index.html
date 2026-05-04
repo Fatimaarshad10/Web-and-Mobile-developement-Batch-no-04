@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading01">hello</h1>
+    <button onclick="changeWord()">click me </button>
+    <button onclick="changeWord()">click me 2 </button>
+
+
+    <script>
+      // include
+      // trim
+      // split
+      // sub string
+      // repeat
+      // indexof
+      // concat
+
+      // let username="Ayeshamalik"
+      // console.log(username.includes("Ayesha"))
+      // let text=  " ali  "
+      // console.log(text.trim())
+
+      // let chars="a-pp-le"
+      // console.log(chars.split("p"))
+
+      // let value="HELLO WORLD"
+      // console.log(value.substring(0,5))
+      // let text2 = "Hello World"
+      // console.log(text2.indexOf("o"))
+      // // concat()
+      // let array1 = [1,2];
+      // let array2 = [3,4];
+      // let mergedArray = array1.concat(array2)
+      // console.log(mergedArray)
+
+      // 5 string method
+      // events
+
+      function changeWord() {
+        console.log("word is changed!");
+        const text = document.getElementById("heading01");
+        text.innerText = "world ";
+      }
+    </script>
+  </body>
+</html>

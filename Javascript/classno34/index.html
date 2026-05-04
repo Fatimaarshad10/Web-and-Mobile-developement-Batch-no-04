@@ -6,45 +6,76 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 id="heading01">hello</h1>
-    <button onclick="changeWord()">click me </button>
-    <button onclick="changeWord()">click me 2 </button>
-
+    <!-- className -->
+    <div class="container"></div>
+    <h1 class="container"></h1>
 
     <script>
-      // include
-      // trim
-      // split
-      // sub string
-      // repeat
-      // indexof
-      // concat
+      // string methods
+      // charAt
+      // Charcodeat
+      // padStart , padEND
+      // EndWith , startWith
+      // matchAll
+      // replaceAll
+      // stringat
+      // let text = "hello world";
+      // console.log(text.charAt(1))
 
-      // let username="Ayeshamalik"
-      // console.log(username.includes("Ayesha"))
-      // let text=  " ali  "
-      // console.log(text.trim())
+      // let text = "apple"
+      // console.log(text.charCodeAt(1))
 
-      // let chars="a-pp-le"
-      // console.log(chars.split("p"))
+      // let username= "Sky"
+      // console.log(username.padStart(7 , "Blue"))
 
-      // let value="HELLO WORLD"
-      // console.log(value.substring(0,5))
-      // let text2 = "Hello World"
-      // console.log(text2.indexOf("o"))
-      // // concat()
-      // let array1 = [1,2];
-      // let array2 = [3,4];
-      // let mergedArray = array1.concat(array2)
-      // console.log(mergedArray)
+      //  let ttext = "javascript";
+      //  console.log(ttext.startsWith("java"));
+      //   console.log(ttext.startsWith("script"));
 
-      // 5 string method
-      // events
+      //   let java = "javascript";
+      //  console.log(java.endsWith("java"));
+      //   console.log(ttext.endsWith("script"));
 
-      function changeWord() {
-        console.log("word is changed!");
-        const text = document.getElementById("heading01");
-        text.innerText = "world ";
+      //   let name = "AQSA KHALID"
+      //   console.log(name.endsWith("AQSA"))
+
+      //   let usernaame = "AQSA KHALID"
+      //   console.log(usernaame.startsWith("AQSA"))
+      //   let text= "I like Maliha."
+      //   console.log(text.replaceAll("like", "love"))
+
+      // let text = "I love cats. Cats are very easy to love. Cats are very popular."
+      // const iterator = text.matchAll("cats");
+      // console.log(iterator)
+      // for(let i = 0 ; i < 5 ; i++){
+      //     console.log(iterator)
+      // }
+      // console.log(...iterator)
+
+      // for (let match of iterator){
+      //     console.log(match)
+      // }
+      // const data = [ 1 ,2,3,4,5]
+
+      // for(let no of data){
+      //     console.log(no)
+      // }
+
+      // match(regex)	Returns an Array of results
+      // matchAll(regex)	Returns an Iterator of results
+      // replace(regex)	Returns a new String
+      // replaceAll(regex)	Returns a new String
+      // search(regex)	Returns the index of the first match
+      // split(regex)	Returns an Array of results
+
+      function AddTag() {
+        const containerVar = document.getElementsByClassName("container");
+        // console.log(containerVar)
+
+        for (let data of containerVar) {
+          data.innerHTML = "<h1>hello world </h1>";
+          //    color , background change
+        }
       }
     </script>
   </body>
