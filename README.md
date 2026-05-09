@@ -59,7 +59,9 @@
 | Day 45 | Satuday,  25/04/2026 | JavaScript | Array method (filter , reduce , spread , map ,  String Method )
 | Day 46 | Sunday,   26/04/2026 | CSS MCQS TEST | String method(reduce , lower , upper , slice)
 | Day 47 | Satuday,  02/05/2026 | JavaScript | String method , DOM (onclick , functional call , innerText , getelementbyId)
-| Day 48 | Satuday,  03/05/2026 | JavaScript | String method , DOM (onClick , getElementByClassName)
+| Day 48 | Sunday,   03/05/2026 | JavaScript | String method , DOM (onClick , getElementByClassName)
+| Day 49 | Satuday,  09/05/2026 | JavaScript | Number method , DOM (onSubmit , getElementByTagName)
+
 
 
 

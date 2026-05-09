@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <h1></h1>
+    <form name="myForm" onsubmit="validate()">
+      <input type="text" name="first_name" placeholder="first_name" />
+      <input type="submit" />
+    </form>
+    <script>
+      // let age = 20
+      // console.log (age.toString())
+
+      //  let num = 30.45
+      //  console.log(num.toExponential(1))
+      //  let price=12.3456;
+      //  console.log(price.toFixed(2))
+      //  let num1 = 100;
+      //  console.log(num1.toPrecision());
+
+      //  let number = 123;
+      //  console.log(number.valueOf());
+
+      //  const price = 100;
+      //  console.log(Number(price));
+
+      //  String()
+      //  Array()
+      //  Number()
+
+      // const head = document.getElementsByTagName('h1')
+      // console.log(head)
+
+      function validate() {
+        // console.log('Form is submitted!')
+        const data = document.forms["myForm"]["first_name"].value;
+        if (data === "") {
+          alert("first Name is required");
+        } else {
+          alert("Form is submitted");
+        }
+      }
+    </script>
+  </body>
+</html>
