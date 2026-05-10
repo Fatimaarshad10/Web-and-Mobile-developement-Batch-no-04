@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div{
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="mySelect" onchange="myFunctionNew()">
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Volvo">Volvo</option>
+    </select>
+
+    <input type="text" id="myInput" />
+
+    <p id="para">first</p>
+    <p id="para">Second</p>
+
+    <button onclick="setTimeout(myFunction, 3000)">Try it</button>
+
+    <div>
+      <p id="h">Hours:00</p>
+      <p id="m">Minutes:00</p>
+      <p id="s">Seconds:00</p>
+    </div>
+    <script>
+      // isInteger
+      // parseint , parseFloat
+      // isFinite , isNan
+      // let a = 5;
+      // let b = 5.6;
+      // console.log(Number.isInteger(a))
+      // console.log(Number.isInteger(b))
+      // const value1="10.5"
+      // console.log(parseInt(value1))
+      //  let str1 = "39.54"
+      //  console.log(parseFloat(str1))
+      //  console.log(Number.isFinite(5));
+      //  let marks=40
+      //  console.log (Number. isNaN(marks))
+      //  let num = 99.567
+      //  console.log(num.toFixed(2))
+      //  let number=12.3456;
+      //  console.log(number.toPrecision(3))
+      //  let city="Faisalabd "
+      //  console.log(city.trimEnd());
+      //  let city1=" faisalbad "
+      //  console.log(city1.trimEnd())
+
+      function myFunctionNew() {
+        const data = document.getElementById("mySelect").value;
+        console.log("value is changed", data);
+      }
+      const input = document.getElementById("myInput");
+
+      input.addEventListener("input", function (event) {
+        console.log(event.target.value);
+      });
+
+      const pickTag = document.querySelector("p");
+      const pickTags = document.querySelectorAll("#para");
+
+      console.log(pickTag);
+      console.log(pickTags);
+
+      let w = window.innerWidth;
+      let h = window.innerHeight;
+      console.log(w);
+      console.log(h);
+
+      // setTimeout
+      // setInterval
+
+      function myFunction() {
+        alert("Hello");
+      }
+
+      const hour = document.getElementById("h");
+      const minutes = document.getElementById("m");
+      const seconds = document.getElementById("s");
+      let no = 0;
+
+      function changeSeconds() {
+        seconds.innerText = no;
+
+        no++;
+      }
+
+      setInterval(changeSeconds, 1000);
+    </script>
+  </body>
+</html>

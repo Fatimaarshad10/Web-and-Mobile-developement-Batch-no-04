@@ -61,6 +61,8 @@
 | Day 47 | Satuday,  02/05/2026 | JavaScript | String method , DOM (onclick , functional call , innerText , getelementbyId)
 | Day 48 | Sunday,   03/05/2026 | JavaScript | String method , DOM (onClick , getElementByClassName)
 | Day 49 | Satuday,  09/05/2026 | JavaScript | Number method , DOM (onSubmit , getElementByTagName)
+| Day 50 | Sunday,   10/05/2026 | JavaScript | Number method , DOM (onChange , querySelector , querySelectorAll , settimeout , setInterval)
+
 
 
 
