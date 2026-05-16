@@ -62,6 +62,8 @@
 | Day 48 | Sunday,   03/05/2026 | JavaScript | String method , DOM (onClick , getElementByClassName)
 | Day 49 | Satuday,  09/05/2026 | JavaScript | Number method , DOM (onSubmit , getElementByTagName)
 | Day 50 | Sunday,   10/05/2026 | JavaScript | Number method , DOM (onChange , querySelector , querySelectorAll , settimeout , setInterval)
+| Day 51 | Satuday,  16/05/2026 | JavaScript | Object (Properties & methods | gpt free version | nayapay)
+
 
 
 
