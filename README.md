@@ -64,6 +64,8 @@
 | Day 50 | Sunday,   10/05/2026 | JavaScript | Number method , DOM (onChange , querySelector , querySelectorAll , settimeout , setInterval)
 | Day 51 | Satuday,  16/05/2026 | JavaScript | Object (Properties & methods | gpt free version | nayapay)
 | Day 52 | Sunday,   17/05/2026 | JavaScript | Object (constructor function | gpt custom , image generation , app connector)
+| Day 53 | Satuday,  23/05/2026 | JavaScript | Async & sync (callback)
+
 
 
 
