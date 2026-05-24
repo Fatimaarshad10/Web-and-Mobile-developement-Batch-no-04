@@ -65,7 +65,7 @@
 | Day 51 | Satuday,  16/05/2026 | JavaScript | Object (Properties & methods | gpt free version | nayapay)
 | Day 52 | Sunday,   17/05/2026 | JavaScript | Object (constructor function | gpt custom , image generation , app connector)
 | Day 53 | Satuday,  23/05/2026 | JavaScript | Async & sync (callback)
-| Day 53 | Sunday,   24/05/2026 | JavaScript | First Test
+| Day 54 | Sunday,   24/05/2026 | JavaScript | First Test
 
 
 
