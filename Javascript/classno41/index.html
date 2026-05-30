@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const promise = new Promise((resolve, reject) => {
+      // resolve("Data fetch successfully")
+      // reject('404 error')
+      // })
+      fetch("https://fakestoreapi.com/products/1")
+        .then((result) => {
+          console.log("success", result.json());
+        })
+        .catch((error) => {
+          console.log("Reject", error);
+        });
+
+      // function resolve (result){
+      //     console.log(result)
+      // }
+      // function reject (error){
+      //     console.log(error)
+      // }
+
+      // resolve("Data fetch successfully")
+      // reject('404 error')
+    </script>
+  </body>
+</html>
