@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // https://fatima.com/products
+
+      // function Product(title , description , price){
+      //     this.title = title,
+      //     this.description = description,
+      //     this.price = price
+      // }
+
+      // function GetProducts('/product' , req , res){
+      //     const p1 = new Product('product no 01' , 'product....' , 200)
+      //     const p2 = new Product('product no 02' , 'product....' , 300)
+      //     let res = [p1 ,p2]
+      //     return res
+      // }
+      // console.log(GetProducts())
+
+      // https://fatima.com/products
+
+      // fetch('https://fakestoreapi.com/products/1').then((result) => {
+      //     // const data = result.json()
+      //     // console.log('success', data)
+      // }).catch((error) => {
+      //     console.log("Reject", error)
+      // })
+
+      async function main() {
+        try {
+          const user = await fetch("https://fakestoreapi.com/products/1");
+          const data = await user.json();
+          console.log(data);
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      main();
+    </script>
+  </body>
+</html>

@@ -67,6 +67,8 @@
 | Day 53 | Satuday,  23/05/2026 | JavaScript | Async & sync (callback)
 | Day 54 | Sunday,   24/05/2026 | JavaScript | First Test
 | Day 55 | Satuday,  30/05/2026 | JavaScript | Promise , with async
+| Day 56 | Sunday,   31/05/2026 | JavaScript | async & await , try & catch 
+
 
 
 
