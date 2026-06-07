@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solea — Shoe Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Solea<span>.</span></a>
+
+      <nav class="nav">
+        <a href="#products" class="nav__link">Shop</a>
+        <a href="#products" class="nav__link" data-filter="Running">Running</a>
+        <a href="#products" class="nav__link" data-filter="Casual">Casual</a>
+        <a href="#products" class="nav__link" data-filter="Sneakers">Sneakers</a>
+      </nav>
+
+      <button id="cartBtn" class="cart-btn" aria-label="Open cart">
+        🛒 <span id="cartCount" class="cart-btn__count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">New Season 2026</p>
+        <h1 class="hero__title">Step into comfort, walk in style.</h1>
+        <p class="hero__sub">Premium shoes designed for every step of your day.</p>
+        <a href="#products" class="btn btn--primary">Shop Now</a>
+      </div>
+      <img class="hero__img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Featured shoe" />
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section container">
+    <h2 class="section__title">Our Collection</h2>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <!-- Cart drawer -->
+  <div id="overlay" class="overlay"></div>
+  <aside id="cartDrawer" class="cart">
+    <div class="cart__head">
+      <h3>Your Cart</h3>
+      <button id="closeCart" class="cart__close" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart__items"></div>
+    <div class="cart__foot">
+      <div class="cart__total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="btn btn--primary btn--block">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Chatbot -->
+  <button id="chatToggle" class="chat-toggle" aria-label="Open chat">💬</button>
+  <section id="chatWindow" class="chat">
+    <div class="chat__head">
+      <h3>Solea Assistant</h3>
+      <button id="chatClose" class="chat__close" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chatBody" class="chat__body"></div>
+    <form id="chatForm" class="chat__form">
+      <input id="chatInput" class="chat__input" type="text" placeholder="Ask about shoes…" autocomplete="off" />
+      <button type="submit" class="chat__send" aria-label="Send">➤</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Solea. Crafted for every step.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

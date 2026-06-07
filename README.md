@@ -69,6 +69,8 @@
 | Day 55 | Satuday,  30/05/2026 | JavaScript | Promise , with async
 | Day 56 | Sunday,   31/05/2026 | JavaScript | async & await , try & catch 
 | Day 57 | Satuday,  06/06/2026 | JavaScript | Grok , ollama , Module
+| Day 58 | Sunday,   07/06/2026 | Claude Code | coding , skill linkedIn prompt all in AI folder and Skill folder
+
 
 
 
