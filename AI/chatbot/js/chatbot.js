@@ -1,6 +1,4 @@
-// Chat widget — handles UI, keeps history, talks to Grok.
-import { askGroq } from "./groq.js";
-
+// Chat widget — handles UI and keeps history.
 const history = []; // { role, content }
 
 export function initChatbot() {
@@ -20,7 +18,7 @@ export function initChatbot() {
   // Greeting
   bubble(el.body, "bot", "Hi! 👋 I'm your Solea assistant. How can I help?");
 
-  el.form.onsubmit = async (e) => {
+  el.form.onsubmit = (e) => {
     e.preventDefault();
     const text = el.input.value.trim();
     if (!text) return;
@@ -29,15 +27,10 @@ export function initChatbot() {
     bubble(el.body, "user", text);
     history.push({ role: "user", content: text });
 
-    const typing = bubble(el.body, "bot", "…");
-    try {
-      const reply = await askGroq(history);
-      typing.textContent = reply;
-      history.push({ role: "assistant", content: reply });
-    } catch (err) {
-      typing.textContent = "Sorry, I couldn't connect. Please try again.";
-      console.error(err);
-    }
+    const reply =
+      "Thanks for your message! Our AI assistant is currently unavailable.";
+    bubble(el.body, "bot", reply);
+    history.push({ role: "assistant", content: reply });
     el.body.scrollTop = el.body.scrollHeight;
   };
 }
