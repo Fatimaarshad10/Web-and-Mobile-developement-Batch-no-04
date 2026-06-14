@@ -71,6 +71,8 @@
 | Day 57 | Satuday,  06/06/2026 | JavaScript | Grok , ollama , Module
 | Day 58 | Sunday,   07/06/2026 | Claude Code | coding , skill linkedIn prompt all in AI folder and Skill folder
 | Day 59 | Satuday,  13/06/2026 | React      | Introduction & folder structure with vite
+| Day 60 | Sunday,   14/06/2026 | React      | Folder structure Component and each details 
+
 
 
 
