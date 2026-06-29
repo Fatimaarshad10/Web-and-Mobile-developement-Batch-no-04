@@ -74,7 +74,9 @@
 | Day 60 | Sunday,   14/06/2026 | React      | Folder structure Component and each details 
 | Day 61 | Satuday,  20/06/2026 | React      | React Router dom
 | Day 62 | Sunday,   21/06/2026 | Javascript | Second test
-| Day 63 | Satuday,   21/06/2026 | React     | Tailwind templates & component , props
+| Day 63 | Satuday,  27/06/2026 | React      | Tailwind templates & component , props
+| Day 64 | Sunday,   28/06/2026 | React      | Props , Desrtructure , Json , array map 
+
 
 
 
