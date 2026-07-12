@@ -78,6 +78,11 @@
 | Day 64 | Sunday,   28/06/2026 | React      | Props , Desrtructure , Json , array map 
 | Day 65 | Satuday,  04/07/2026 | React      | hooks , useState , Website business 
 | Day 66 | Sunday,   05/07/2026 | React      | useEffect , Examples with useState 
+| Day 67 | Satuday,  11/07/2026 | NextJs     | Installation , folder structure
+| Day 68 | Sunday,   12/07/2026 | NextJs     | Topics: ⁠Reusable components , ⁠Routes in nextjs , ⁠Nested Routes , ⁠Dynamic Routes [slugs] , ⁠Example : blogs page
+
+
+
 
 
 
