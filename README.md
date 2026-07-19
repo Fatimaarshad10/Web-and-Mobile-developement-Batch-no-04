@@ -81,6 +81,8 @@
 | Day 67 | Satuday,  11/07/2026 | NextJs     | Installation , folder structure
 | Day 68 | Sunday,   12/07/2026 | NextJs     | Topics: ⁠Reusable components , ⁠Routes in nextjs , ⁠Nested Routes , ⁠Dynamic Routes [slugs] , ⁠Example : blogs page
 | Day 69 | Satuday,  18/07/2026 | NextJs     | SSR , CSR , Agent/chatbot
+| Day 70 | Sunday,   19/07/2026 | JavaScript     | Javascript 3rd test
+
 
 
 
