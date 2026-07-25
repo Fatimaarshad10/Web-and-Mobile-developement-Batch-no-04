@@ -82,6 +82,8 @@
 | Day 68 | Sunday,   12/07/2026 | NextJs     | Topics: ⁠Reusable components , ⁠Routes in nextjs , ⁠Nested Routes , ⁠Dynamic Routes [slugs] , ⁠Example : blogs page
 | Day 69 | Satuday,  18/07/2026 | NextJs     | SSR , CSR , Agent/chatbot
 | Day 70 | Sunday,   19/07/2026 | JavaScript     | Javascript 3rd test
+| Day 71 | Satuday,  25/07/2026 | Lablab.ai     | hackathon
+
 
 
 
