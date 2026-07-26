@@ -83,6 +83,8 @@
 | Day 69 | Satuday,  18/07/2026 | NextJs     | SSR , CSR , Agent/chatbot
 | Day 70 | Sunday,   19/07/2026 | JavaScript     | Javascript 3rd test
 | Day 71 | Satuday,  25/07/2026 | Lablab.ai     | hackathon
+| Day 72 | Sunday,   26/07/2026 | Project       | Next js + GPT + Supabase
+
 
 
 
