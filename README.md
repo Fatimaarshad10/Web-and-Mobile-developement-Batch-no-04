@@ -85,7 +85,11 @@
 | Day 71 | Satuday,  25/07/2026 | Lablab.ai     | hackathon
 | Day 72 | Sunday,   26/07/2026 | Project       | Next js + GPT + Supabase
 | Day 73 | Satuday,  01/07/2026 | Project       | Dashboard and landing page design
-| Day 74 | Satuday,  01/07/2026 | Project       | Supabase connection + login auth 
+| Day 74 | Sunday,   02/07/2026 | Project       | Supabase connection + login auth 
+| Day 75 | Satuday,  08/07/2026 | Project       | Profile Edit , View , Username
+| Day 76 | Sunday,   09/07/2026 | Project       | Understand password hash , store and add product
+
+
 
 
 

@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 import {
   ArrowRight,
   DollarSign,
@@ -15,6 +17,7 @@ import { SectionHeader } from "@/components/dashboard/SectionHeader";
 import { Timeline } from "@/components/dashboard/Timeline";
 import { EmptyStateCard } from "@/components/dashboard/EmptyStateCard";
 import { Button } from "@/components/ui/button";
+import { getCurrentUser, getProfile } from "@/lib/supabase/auth";
 
 const stats = [
   { title: "Revenue", value: "$45.2K", change: 12.4, icon: DollarSign },
@@ -79,13 +82,31 @@ const activity = [
 ];
 
 export default function DashboardHomePage() {
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    const loadUser = async () => {
+      const userResult = await getCurrentUser();
+      if (userResult.success && userResult.user) {
+        const profileResult = await getProfile(userResult.user.id);
+        if (profileResult.success && profileResult.profile) {
+          setUserName(profileResult.profile.full_name ?? "");
+        }
+      }
+    };
+
+    loadUser();
+  }, []);
+
+  const displayName = userName || "there";
+
   return (
     <div className="space-y-8 py-4">
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-sm font-semibold text-violet-600">Overview</p>
           <h1 className="mt-1 text-4xl font-semibold tracking-[-0.04em] text-slate-900">
-            Welcome back 👋
+            Welcome back {displayName ? `${displayName} 👋` : "👋"}
           </h1>
           <p className="mt-2 text-slate-500">
             Here&apos;s what&apos;s happening in your business today.

@@ -16,6 +16,7 @@ export interface SignUpOutcome {
   success: boolean;
   error?: string;
   userId?: string;
+  session?: { access_token: string } | null;
 }
 
 export interface ProfileData {
@@ -23,6 +24,52 @@ export interface ProfileData {
   fullName: string;
   businessName: string;
   email: string;
+}
+
+export interface ProfileUpdatePayload {
+  fullName?: string;
+  businessName?: string;
+}
+
+export async function getCurrentUser() {
+  const { data, error } = await supabase.auth.getUser();
+  if (error || !data.user) {
+    return { success: false, error: error?.message ?? "No authenticated user found." };
+  }
+  return { success: true, user: data.user };
+}
+
+export async function getProfile(authId: string) {
+  const { data, error } = await supabase
+    .from("profiles")
+    .select("*")
+    .eq("auth_id", authId)
+    .single();
+
+  if (error) {
+    return { success: false, error: error.message };
+  }
+
+  return { success: true, profile: data };
+}
+
+export async function updateProfile(authId: string, payload: ProfileUpdatePayload) {
+  const updateData: Record<string, string> = {};
+  if (payload.fullName !== undefined) updateData.full_name = payload.fullName.trim();
+  if (payload.businessName !== undefined) updateData.business_name = payload.businessName.trim();
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .update(updateData)
+    .eq("auth_id", authId)
+    .select("*")
+    .single();
+
+  if (error) {
+    return { success: false, error: error.message };
+  }
+
+  return { success: true, profile: data };
 }
 
 export function validateSignUp(payload: SignUpPayload): SignUpErrorMap {
@@ -66,7 +113,7 @@ export async function signUpUser(payload: SignUpPayload): Promise<SignUpOutcome>
     };
   }
 
-  return { success: true, userId: data.user.id };
+  return { success: true, userId: data.user.id, session: data.session };
 }
 
 export async function createUserProfile(profile: ProfileData): Promise<SignUpOutcome> {
@@ -87,11 +134,42 @@ export async function createUserProfile(profile: ProfileData): Promise<SignUpOut
   return { success: true, userId: profile.authId };
 }
 
+export interface SignInOutcome {
+  success: boolean;
+  error?: string;
+  session?: { access_token: string } | null;
+}
+
+export async function signInUser(email: string, password: string): Promise<SignInOutcome> {
+  const { data, error } = await supabase.auth.signInWithPassword({
+    email: email.trim(),
+    password,
+  });
+
+  if (error) {
+    return {
+      success: false,
+      error: error.message === "Invalid login credentials"
+        ? "Those credentials do not match our records. Please try again."
+        : error.message,
+    };
+  }
+
+  return { success: true, session: data.session };
+}
+
 export async function signUpWithProfile(payload: SignUpPayload): Promise<SignUpOutcome> {
   const signUpResult = await signUpUser(payload);
 
   if (!signUpResult.success || !signUpResult.userId) {
     return signUpResult;
+  }
+
+  if (!signUpResult.session) {
+    return {
+      success: false,
+      error: "Please confirm your email address before continuing. Check your inbox for the confirmation link.",
+    };
   }
 
   const profile: ProfileData = {

@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Modal } from "@/components/ui/modal";
+import { signInUser } from "@/lib/supabase/auth";
 
 const AUTH_STORAGE_KEY = "ai-revenue-auth";
 const USER_STORAGE_KEY = "ai-revenue-user";
@@ -66,24 +67,22 @@ export function LoginModal({ open, onClose, onCreateAccount, prefillEmail = "" }
       return;
     }
 
-    const storedUser = localStorage.getItem(USER_STORAGE_KEY);
-    const savedCredentials = storedUser ? JSON.parse(storedUser) : null;
-    const isSavedUserMatch = savedCredentials && normalizedEmail === savedCredentials.email && normalizedPassword === savedCredentials.password;
-    const isDemoUserMatch = normalizedEmail === DEMO_EMAIL && normalizedPassword === DEMO_PASSWORD;
+    setLoading(true);
 
-    if (!isSavedUserMatch && !isDemoUserMatch) {
-      setError("Those credentials do not match our records. Please try again.");
+    const result = await signInUser(normalizedEmail, normalizedPassword);
+
+    setLoading(false);
+
+    if (!result.success) {
+      setError(result.error ?? "Something went wrong. Please try again.");
       return;
     }
 
-    setLoading(true);
-    await new Promise((resolve) => setTimeout(resolve, 900));
-
     localStorage.setItem(AUTH_STORAGE_KEY, "true");
     localStorage.setItem(`${AUTH_STORAGE_KEY}-remember`, rememberMe ? "true" : "false");
+    localStorage.setItem(USER_STORAGE_KEY, JSON.stringify({ email: normalizedEmail }));
     window.dispatchEvent(new Event("auth-change"));
 
-    setLoading(false);
     onClose();
     router.push("/dashboard");
   };
@@ -210,3 +209,5 @@ export function LoginModal({ open, onClose, onCreateAccount, prefillEmail = "" }
     </Modal>
   );
 }
+
+

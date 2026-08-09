@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useMobile } from "@/hooks/use-mobile";
+import { getCurrentUser, getProfile } from "@/lib/supabase/auth";
 
 const AUTH_STORAGE_KEY = "ai-revenue-auth";
 
@@ -33,13 +34,39 @@ export function Navbar({
   const router = useRouter();
   const isMobile = useMobile();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
 
   useEffect(() => {
-    const syncAuthState = () => setIsLoggedIn(localStorage.getItem(AUTH_STORAGE_KEY) === "true");
+    const syncAuthState = () => {
+      const auth = localStorage.getItem(AUTH_STORAGE_KEY) === "true";
+      setIsLoggedIn(auth);
+      if (auth) loadUserName();
+    };
     syncAuthState();
     window.addEventListener("storage", syncAuthState);
     return () => window.removeEventListener("storage", syncAuthState);
   }, []);
+
+  const loadUserName = async () => {
+    const userResult = await getCurrentUser();
+    if (userResult.success && userResult.user) {
+      const profileResult = await getProfile(userResult.user.id);
+      if (profileResult.success && profileResult.profile) {
+        setUserName(profileResult.profile.full_name ?? "");
+      }
+    }
+  };
+
+  const handleProfileClick = () => {
+    router.push("/dashboard/profile");
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem(AUTH_STORAGE_KEY);
+    setIsLoggedIn(false);
+    window.dispatchEvent(new Event("auth-change"));
+    router.push("/?login=1");
+  };
 
   return (
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur-md">
@@ -116,9 +143,9 @@ export function Navbar({
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="flex h-9 items-center gap-2 rounded-xl px-2">
-                <Avatar src="" alt="User" fallback="JD" className="h-8 w-8" />
+                <Avatar src="" alt={userName || "User"} fallback={(userName || "U").charAt(0).toUpperCase()} className="h-8 w-8" />
                 <span className="hidden text-sm font-medium text-slate-700 md:block">
-                  John Doe
+                  {userName || "User"}
                 </span>
                 <ChevronDown className="hidden h-4 w-4 text-slate-400 md:block" />
               </Button>
@@ -126,18 +153,13 @@ export function Navbar({
             <DropdownMenuContent align="end" className="w-56">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Profile</DropdownMenuItem>
+              <DropdownMenuItem onSelect={handleProfileClick}>Profile</DropdownMenuItem>
               <DropdownMenuItem>Billing</DropdownMenuItem>
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem
                 className="text-red-600"
-                onClick={() => {
-                  localStorage.removeItem(AUTH_STORAGE_KEY);
-                  setIsLoggedIn(false);
-                  window.dispatchEvent(new Event("auth-change"));
-                  router.push("/?login=1");
-                }}
+                onSelect={handleLogout}
               >
                 Log out
               </DropdownMenuItem>
