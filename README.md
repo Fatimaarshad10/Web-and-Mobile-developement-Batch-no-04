@@ -89,6 +89,8 @@
 | Day 75 | Satuday,  08/08/2026 | Project       | Profile Edit , View , Username
 | Day 76 | Sunday,   09/08/2026 | Project       | Understand password hash , store and add product
 | Day 77 | Saturday, 15/08/2026 | Project       | Add product , update , delete (claude plugin , connector)
+| Day 77 | Saturday, 16/08/2026 | Project       | Store create , improve product error
+
 
 
 

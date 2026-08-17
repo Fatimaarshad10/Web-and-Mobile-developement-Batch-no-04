@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation";
 import {
   AlertTriangle,
   BarChart3,
-  CreditCard,
   LayoutDashboard,
   Package,
   Settings,
   ShoppingCart,
   Sparkles,
+  Store,
   TrendingUp,
   Users,
 } from "lucide-react";
@@ -23,6 +23,7 @@ const navItems = [
   { href: "/dashboard/revenue", label: "Revenue", icon: BarChart3 },
   { href: "/dashboard/orders", label: "Orders", icon: ShoppingCart },
   { href: "/dashboard/products", label: "Products", icon: Package },
+  { href: "/dashboard/store", label: "Store", icon: Store },
   { href: "/dashboard/customers", label: "Customers", icon: Users },
   { href: "/dashboard/problems", label: "Revenue Problems", icon: AlertTriangle },
   { href: "/dashboard/insights", label: "AI Insights", icon: Sparkles },

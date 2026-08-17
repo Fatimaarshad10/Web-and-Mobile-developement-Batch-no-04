@@ -1,6 +1,15 @@
 -- Migration: Create the profiles table
--- Apply in the Supabase SQL editor or via the Supabase CLI (`supabase db push`).
--- Run this BEFORE the sign-up flow so the `profiles` table exists for inserts.
+--
+-- Security: This table intentionally does NOT contain a `password` column.
+-- Supabase Auth (`auth.users`) is the sole owner of credential data.
+--
+-- If you previously ran a migration that added a `password` column to `profiles`,
+-- remove it before applying this migration with:
+--   ALTER TABLE public.profiles DROP COLUMN IF EXISTS password;
+--
+-- Apply this migration in the Supabase SQL editor or via the Supabase CLI
+-- (`supabase db push`). Run it BEFORE the sign-up flow so the `profiles`
+-- table exists for inserts.
 
 create table if not exists public.profiles (
   auth_id       uuid primary key references auth.users not null,

@@ -1,5 +1,42 @@
 import { supabase } from "./client";
 
+// Security: Passwords are NEVER stored in the `profiles` table.
+// Supabase Auth (`supabase.auth.signUp`) is the only mechanism that handles
+// password hashing and storage. Our application database stores only
+// non-sensitive profile data (auth_id, full_name, business_name, email).
+//
+// If a `password` column already exists in `public.profiles` from an earlier
+// schema version, do NOT use it. Remove it with a destructive migration such
+// as: ALTER TABLE public.profiles DROP COLUMN IF EXISTS password;
+// Only run that if you confirm the column exists and is unused.
+
+const PASSWORD_FIELDS = new Set([
+  "password",
+  "password_hash",
+  "password_hex",
+  "confirm_password",
+  "confirmPassword",
+]);
+
+function stripPasswordFields(payload: Record<string, unknown>): Record<string, unknown> {
+  const sanitized: Record<string, unknown> = {};
+  for (const [key, value] of Object.entries(payload)) {
+    if (PASSWORD_FIELDS.has(key)) {
+      continue;
+    }
+    sanitized[key] = value;
+  }
+  return sanitized;
+}
+
+export function assertNoPasswordLeak(payload: Record<string, unknown>): void {
+  const leaked = Object.keys(payload).filter((key) => PASSWORD_FIELDS.has(key));
+  if (leaked.length > 0) {
+    throw new Error(
+      `Security violation: password-related fields must not be stored in profiles. Detected: ${leaked.join(", ")}`
+    );
+  }
+}
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MIN_PASSWORD_LENGTH = 8;
 
@@ -42,7 +79,7 @@ export async function getCurrentUser() {
 export async function getProfile(authId: string) {
   const { data, error } = await supabase
     .from("profiles")
-    .select("*")
+    .select("auth_id, full_name, business_name, email, created_at")
     .eq("auth_id", authId)
     .single();
 
@@ -62,7 +99,7 @@ export async function updateProfile(authId: string, payload: ProfileUpdatePayloa
     .from("profiles")
     .update(updateData)
     .eq("auth_id", authId)
-    .select("*")
+    .select("auth_id, full_name, business_name, email, created_at")
     .single();
 
   if (error) {
@@ -116,7 +153,16 @@ export async function signUpUser(payload: SignUpPayload): Promise<SignUpOutcome>
   return { success: true, userId: data.user.id, session: data.session };
 }
 
+// NOTE: Never insert passwords, password hashes, or confirm passwords into `profiles`.
+// Supabase Auth is the sole owner of credential data.
 export async function createUserProfile(profile: ProfileData): Promise<SignUpOutcome> {
+  assertNoPasswordLeak({
+    auth_id: profile.authId,
+    full_name: profile.fullName,
+    business_name: profile.businessName,
+    email: profile.email,
+  });
+
   const { error } = await supabase.from("profiles").insert({
     auth_id: profile.authId,
     full_name: profile.fullName.trim(),

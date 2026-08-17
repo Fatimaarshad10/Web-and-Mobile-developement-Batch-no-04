@@ -3,7 +3,6 @@
 import { useState } from "react";
 import {
   AlertTriangle,
-  ArrowRight,
   CheckCircle2,
   Download,
   RefreshCcw,
@@ -21,6 +20,7 @@ import { AIInsightCard } from "@/components/dashboard/AIInsightCard";
 import { Timeline } from "@/components/dashboard/Timeline";
 import { OrderDetailsDrawer } from "@/components/dashboard/OrderDetailsDrawer";
 import { EmptyStateCard } from "@/components/dashboard/EmptyStateCard";
+import { mockOrders } from "@/lib/mock/orders";
 
 const orderStats = [
   { title: "Total Orders", value: "3,482", change: 14.3, icon: ShoppingBag },
@@ -38,13 +38,25 @@ const statuses = [
   { label: "Refunded", count: "54", amount: "$3.2K", tone: "refunded" as const },
 ];
 
-const orders: OrderRow[] = [
-  { id: "A10482", customer: "John Davis", productCount: 3, total: "$268.00", payment: "Paid", fulfillment: "Processing", date: "Mar 18, 2026", avatar: "JD" },
-  { id: "A10476", customer: "Amelia Lee", productCount: 2, total: "$194.00", payment: "Pending", fulfillment: "Pending", date: "Mar 18, 2026", avatar: "AL" },
-  { id: "A10471", customer: "Michael Chen", productCount: 1, total: "$128.00", payment: "Paid", fulfillment: "Shipped", date: "Mar 17, 2026", avatar: "MC" },
-  { id: "A10468", customer: "Priya Shah", productCount: 4, total: "$420.00", payment: "Failed", fulfillment: "Pending", date: "Mar 17, 2026", avatar: "PS" },
-  { id: "A10459", customer: "Daniel Ortiz", productCount: 2, total: "$176.00", payment: "Paid", fulfillment: "Delivered", date: "Mar 16, 2026", avatar: "DO" },
-];
+const orders: OrderRow[] = mockOrders.map((order) => ({
+  id: order.id,
+  customer: order.customerName,
+  productCount: order.items.reduce((sum, item) => sum + item.quantity, 0),
+  total: `$${order.total.toFixed(2)}`,
+  payment: "Paid",
+  fulfillment: order.status,
+  date: new Date(order.createdAt).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }),
+  avatar: order.customerName
+    .split(" ")
+    .map((n) => n[0])
+    .slice(0, 2)
+    .join("")
+    .toUpperCase(),
+}));
 
 const alerts = [
   { title: "High-value order pending", description: "A premium order with 3 items has been waiting for fulfillment longer than 2 business days.", impact: "$1,840", priority: "High" as const },
