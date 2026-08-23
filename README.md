@@ -90,6 +90,10 @@
 | Day 76 | Sunday,   09/08/2026 | Project       | Understand password hash , store and add product
 | Day 77 | Saturday, 15/08/2026 | Project       | Add product , update , delete (claude plugin , connector)
 | Day 78 | Sunday,   16/08/2026 | Project       | Store create , improve product error
+| Day 79 | Saturday, 23/08/2026 | Project       | Product detail , cart and checkout
+| Day 80 | Sunday,   24/08/2026 | Project       | Test day
+
+
 
 
 
