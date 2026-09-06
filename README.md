@@ -92,6 +92,10 @@
 | Day 78 | Sunday,   16/08/2026 | Project       | Store create , improve product error
 | Day 79 | Saturday, 23/08/2026 | Project       | Product detail , cart and checkout
 | Day 80 | Sunday,   24/08/2026 | Project       | Test day
+| Day 81 | Saturday, 05/09/2026 | Supabase      | Supabase Student table queries
+| Day 82 | Sunday,   06/09/2026 | Supabase      | Instagram database
+
+
 
 
 

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for the AI Revenue theme.
+  Every colour, font and radius used by the site lives here so sections
+  never hardcode hex values. Change a token once, it updates everywhere.
+*/
+@theme {
+  /* Surfaces */
+  --color-page: #e9ebf7;
+  --color-ink: #0d0f0c;
+  --color-surface: #181a17;
+  --color-card: #343632;
+
+  /* Text on dark surfaces */
+  --color-cream: #f7f7f2;
+  --color-muted: #b9bbb4;
+
+  /* Light sections (About). Kept separate from the dark-surface text tokens
+     above: `muted` there is a warm grey for dark backgrounds, `soft` here is a
+     neutral grey for white ones. */
+  --color-ink-light: #111111;
+  --color-soft: #a3a3a3;
+  --color-line: #c8c8c8;
+  --color-pill: #f3f3f3;
+
+  /* Brand accent (hero / dark surfaces) */
+  --color-lime: #c8ed20;
+  --color-lime-bright: #d5fa31;
+  --color-lime-dark: #a9cc0b;
+
+  /* Product-panel greens. Deliberately distinct values from the hero lime
+     above, not rounding of it: the panel is a lighter surface with a deeper
+     card sitting on top of it. */
+  --color-panel: #c7df2f;
+  --color-panel-deep: #9db419;
+  --color-chart-lime: #cae72e;
+  --color-chart-lime-soft: #c1dc22;
+  --color-chart-blue: #48a8e8;
+
+  /* Footer accent: a deeper lime than the hero's, used on the subscribe CTA. */
+  --color-lime-deep: #b8d51d;
+
+  /* Fonts are injected by next/font in layout.tsx */
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+body {
+  background: var(--color-page);
+  font-family: var(--font-sans);
+}
