@@ -94,6 +94,10 @@
 | Day 80 | Sunday,   24/08/2026 | Project       | Test day
 | Day 81 | Saturday, 05/09/2026 | Supabase      | Supabase Student table queries
 | Day 82 | Sunday,   06/09/2026 | Supabase      | Instagram database
+| Day 84 | Saturday, 12/09/2026 | Supabase      | Integrated instagram flow with queries
+| Day 85 | Sunday,   13/09/2026 | Supabase      | Instagram database , frontend and edge function
+
+
 
 
 
