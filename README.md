@@ -96,6 +96,12 @@
 | Day 82 | Sunday,   06/09/2026 | Supabase      | Instagram database
 | Day 84 | Saturday, 12/09/2026 | Supabase      | Integrated instagram flow with queries
 | Day 85 | Sunday,   13/09/2026 | Supabase      | Instagram database , frontend and edge function
+| Day 85 | Saturday, 19/09/2026 | Supabase      | Edge functions and also how to run migration files
+| Day 85 | Sunday,   20/09/2026 | Express       | Backend folder structure
+| Day 85 | Saturday, 26/09/2026 | Express       | How to create API (Create , delete , update and get)
+| Day 85 | Sunday,   27/09/2026 | Postgresql    | Database connection
+
+
 
 
 
