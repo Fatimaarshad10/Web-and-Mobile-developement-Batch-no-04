@@ -94,76 +94,14 @@
 | Day 80 | Sunday,   24/08/2026 | Project       | Test day
 | Day 81 | Saturday, 05/09/2026 | Supabase      | Supabase Student table queries
 | Day 82 | Sunday,   06/09/2026 | Supabase      | Instagram database
-| Day 84 | Saturday, 12/09/2026 | Supabase      | Integrated instagram flow with queries
-| Day 85 | Sunday,   13/09/2026 | Supabase      | Instagram database , frontend and edge function
+| Day 83 | Saturday, 12/09/2026 | Supabase      | Integrated instagram flow with queries
+| Day 84 | Sunday,   13/09/2026 | Supabase      | Instagram database , frontend and edge function
 | Day 85 | Saturday, 19/09/2026 | Supabase      | Edge functions and also how to run migration files
-| Day 85 | Sunday,   20/09/2026 | Express       | Backend folder structure
-| Day 85 | Saturday, 26/09/2026 | Express       | How to create API (Create , delete , update and get)
-| Day 85 | Sunday,   27/09/2026 | Postgresql    | Database connection
-| Day 86 | Saturday, 28/09/2026 | Postman       | API (GET , POST) With database
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Day 86 | Sunday,   20/09/2026 | Express       | Backend folder structure
+| Day 87 | Saturday, 26/09/2026 | Express       | How to create API (Create , delete , update and get)
+| Day 88 | Sunday,   27/09/2026 | Postgresql    | Database connection
+| Day 89 | Saturday, 03/10/2026 | Postman       | API (GET , POST) With database
+| Day 90 | Sunday,   04/10/2026 | Postman       | API (Delete , patch) With database
 
 
 
@@ -176,9 +114,9 @@
 - Git & GitHub
 - Bootstrap & Tailwind CSS
 - React.js & Next.js
-- Firebase Authentication & Hosting
+- Supabase & Vercel
 - Backend Development (Node.js, Express.js)
-- MongoDB
+- MongoDB , Postgresql (Pg Admin)
 - REST APIs
 - Mobile App Development (React Native / Expo)
 - Final Project & Hackathon
